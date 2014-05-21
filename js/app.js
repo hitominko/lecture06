@@ -18,6 +18,7 @@ var updateCounter = function(){
 
 var showAlarmMessage = function(){
 		var message = "出来上がり！";
+		//messageという変数は「出来上がり！」と定義する
 		if(Notification.permission == "granted"){
 				var notification = new Notification(message);
 		}//もし通知機能があれば通知をする
@@ -34,21 +35,21 @@ var update = function(){
 		}else{
 				showAlarmMessage();
 				startShakeramen();
-		}//それ以外の場合はshowAlarmMessageの関数を呼び出す
+		}//それ以外の場合はshowAlarmMessageの関数を呼び出し、さらにクリップアートのアニメーションを実行する
 };
 
 var isReadyToCountdown = function(){
 		return Number.isInteger(alarm.ramen) && alarm.ramen > 0;
-};//alarm.durationが数字であるかつalarm.durationが０以上であるときに外に送り出すisReadyToCountdownという関数を定義する
+};//alarm.ramenが数字であるかつalarm.ramenが０以上であるときに外に送り出すisReadyToCountdownという関数を定義する
 
 var setupAlarm = function(durationString, message){
 		alarm.ramen = Number(durationString),
 		alarm.message = message;
-};//alarm.duration は数を代入しalarm.messageにはmessageを代入するsetupAlarm という関数を定義する　またsetupAlarmの関数はdurationString, messageの変数でのみ機能する関数である
+};//alarm.ramen は数を代入しalarm.messageにはmessageを代入するsetupAlarm という関数を定義する　またsetupAlarmの関数はdurationString, messageの変数でのみ機能する関数である
 
 var startAlarm = function(){
 		setupAlarm(alarm.ramenSelect.value, alarm.messageInput);
-		//setupAlarmの関数にalarm.durationSelect.valueとalarm.messageInput.valueを代入する
+		//setupAlarmの関数にalarm.ramenSelect.valueとalarm.messageInput.valueを代入する
 		if(isReadyToCountdown()){
 				updateCounter();
 				window.setTimeout(update, INTERVAL);
@@ -57,7 +58,7 @@ var startAlarm = function(){
 
 var initApp = function(){
 		alarm.ramenSelect = document.querySelector("#ramen");
-		//alarm.durationSelectでは#durationの箱の中のものを選び出す
+		//alarm.ramenSelectでは#ramenの箱の中のものを選び出す
 		alarm.output = document.querySelector("#countdown");
 		//alarm.outputでは#countdownの箱の中のものを選び出す
 
