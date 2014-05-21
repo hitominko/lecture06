@@ -1,11 +1,29 @@
+nav{
+	height: 80px;
+	width: 100%;
+	background-color: #db7093;
+	margin-left: -15px;
+	padding-right: 30px;
+	margin-top: -33px;
+	text-align: center;
+}
+nav h1{
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 40px;
+}
+
 body{
 	font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
 	font-size: 18px;
 	line-height: 1.7;
-
 	color: #363636;
-	pading: 0;
-	margin: 0;
+	padding: 0;
+	margin-left: 15px;
+	background-color: #ffe4e1;
+}
+body img{
+	margin-top: 15px;
 }
 article{
 	width: 50em;

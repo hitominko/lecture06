@@ -1,11 +1,12 @@
 #control{
     padding: .5em 1em;
+    margin-left: 10px;
 }
 
 #control select{
     font-size: 18px;
     padding: .5em 1em;
-    width: 10em;
+    width: 11em;
     border: solid 1px #363636;
     border-radius: 2px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .2) inset;
@@ -18,9 +19,10 @@
 }
 
 #countdown{
-		font-size: 72px;
+        margin-left: 120px;
+		font-size: 60px;
 		position: absolute;
-		top: 50%;
+		top: 45%;
 		text-align: center;
 		width: 100%;
 }

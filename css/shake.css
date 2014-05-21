@@ -1,0 +1,27 @@
+.shakeright{
+	animation-duration: 0.05s;
+	animation-name: shakeright;
+}
+
+@keyframes shakeright{
+		from{
+			margin-left: 0px;
+		}
+		to{
+			margin-left: 15px;
+		}
+}
+
+.shakeleft{
+	animation-duration: 0.05s;
+	animation-name: shakeleft;
+}
+
+@keyframes shakeleft{
+		from{
+			margin-left: 15px;
+		}
+		to{
+			margin-left: 0px;
+		}
+}

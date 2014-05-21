@@ -1,58 +1,36 @@
 <!doctype html>
 <html lang="ja">
   <head>
-    <title>ronpro2014s#06</title>
+    <title>インスタント麺タイマー</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/alerm.css">
+    <link rel="stylesheet" type="text/css" href="css/slidein.css">
+    <link rel="stylesheet" type="text/css" href="css/flip.css">
+    <link rel="stylesheet" type="text/css" href="css/shake.css">
   </head>
+  <nav>
+    <h1>インスタント麺タイマー</h1>
+  </nav>
   <body>
+    <section id="ramenimg">
+        <img src="img/ramenimg.png" alt="ラーメンのクリップアート">
+  </section>
     <div id="control">
       <form>
-        予鈴
-        <select id="durationFirst">
-          <option value="5">5秒後</option>
-          <option value="10">10秒後</option>
-          <option value="30">30秒後</option>
-          <option value="60">60秒後</option>
-          <option value="90">90秒後</option>
-          <option value="180">3分後</option>
-          <option value="900">15分後</option>
-          <option value="1800">30分後</option>
+        <select id="ramen">
+          <option value="60">Quick1</option>
+          <option value="180">普通のカップ麺</option>
+          <option value="240">日清ラ王</option>
+          <option value="300">どん兵衛</option>
         </select>
-        発表時間
-        <select id="durationPres">
-          <option value="5">5秒</option>
-          <option value="10">10秒</option>
-          <option value="30">30秒</option>
-          <option value="60">60秒</option>
-          <option value="90">90秒</option>
-          <option value="180">3分</option>
-          <option value="900">15分</option>
-          <option value="1800">30分</option>
-        </select>
-        質疑応答時間
-        <select id="durationQues">
-          <option value="5">5秒</option>
-          <option value="10">10秒</option>
-          <option value="30">30秒</option>
-          <option value="60">60秒</option>
-          <option value="90">90秒</option>
-          <option value="180">3分</option>
-          <option value="900">15分</option>
-          <option value="1800">30分</option>
-        </select>
-        <!--
-        に
-        <input type="text" id="message">
-        と
-      -->
-        <button type="button" id="start">タイマースタート</button>
+        <button type="button" id="start">スタート！</button>
       </form>
     </div>
     <div id="countdown">
-      アラームをセットしてください。
+      インスタント麺を選んで<br>ボタンを押してください
     </div>
     <script src="js/app.js"></script>
+    <script src="js/animates.js"></script>
   </body>
 </html>
